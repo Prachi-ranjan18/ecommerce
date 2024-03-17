@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 
-mongoose.connect('mongodb://127.0.0.1:27017/ecommerce', {
+mongoose.connect('mongodb+srv://root:root@cluster0.dtuo1xs.mongodb.net/ecommerce', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 //   useCreateIndex: true
