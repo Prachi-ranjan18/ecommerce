@@ -1,0 +1,17 @@
+<!-- signup.component.html -->
+<form (ngSubmit)="onSubmit()">
+    <label>
+      Username:
+      <input type="text" name="username" [(ngModel)]="signupForm.username" required>
+    </label>
+    <label>
+      Email:
+      <input type="email" name="email" [(ngModel)]="signupForm.email" required>
+    </label>
+    <label>
+      Password:
+      <input type="password" name="password" [(ngModel)]="signupForm.password" required>
+    </label>
+    <button type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+  </form>
+  
